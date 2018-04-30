@@ -1,0 +1,19 @@
+@import "variables";
+@import "home";
+@import "profiles";
+@import "portfolio";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* Used to push the footer always on bottom*/
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
