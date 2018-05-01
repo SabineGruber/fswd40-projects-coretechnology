@@ -13,10 +13,13 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  font-family: $textFont;
+  font-size: 1.2em;
 }
 main {
   flex: 1;
   width: 80%;
+  margin: 0 auto;
 }
 
 header, footer {
