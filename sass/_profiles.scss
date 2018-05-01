@@ -1,0 +1,109 @@
+@mixin transition {
+-webkit-transition: all 2s ease;
+-moz-transition: all 2s ease;
+-ms-transition: all 2s ease;
+-o-transition: all 2s ease;
+transition: all 2s ease;
+}
+
+
+header, footer{
+	height: 70px;
+	background: $thirdColor;
+}
+
+/* Name bar */
+#nameSelect {
+	display: flex;
+	justify-content: space-between;
+	top: 10px;
+	position: relative;
+	width: 100%;
+}
+
+#nameSelect label {
+	padding: 15px;
+	border: $mainBorder;
+	font-weight: bold;
+}
+
+#nameSelect label:hover {
+	cursor: pointer;
+}
+
+label ~input[type="radio"]:checked {
+	background: red;
+}
+
+/* Radio Buttons */
+input[type="radio"] {
+	display: none;
+}
+/*checked*/
+#sabCheck:checked~#sabine,
+#patCheck:checked~#patrick,
+#marCheck:checked~#maryam,
+#mioCheck:checked~#mario {
+	display: grid;
+}
+
+/* Profile Cards */
+.profileWrapper {
+	position: relative;
+	top: 20px;
+}
+
+.profileCard {
+	position: relative;
+	border: $mainBorder;
+	display: none;
+    grid-template-columns: 40%  60%;
+    grid-template-areas:
+        "img name"
+        "img bio";
+    align-items: end;
+    @include transition;
+}
+
+.person {
+	grid-area: name;
+}
+
+.social {
+	margin-top: -52px;
+	position: absolute;
+	margin-left: 50px;
+	font-size: 1.3em;
+	color: $primaryColor;
+}
+
+
+.social a {
+	text-decoration: none;
+	color: $secondaryColor;
+}
+
+.social a:hover {
+	color: $primaryColor;
+}
+
+h2 {
+	font-family: $headingFont;
+	font-size: 4em;
+	color: $primaryColor;
+	margin: $mainMargin;
+}
+
+.profileCard img {
+	grid-area: img;
+	width: 100%;
+	position: relative;
+	bottom: 0;
+}
+
+.bio {
+	grid-area: bio;
+	height: 70%;
+	margin: $mainMargin;
+}
+
