@@ -1,30 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<!-- Meta -->
-	<meta charset="UTF-8">
-	<!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-	<!-- Title -->
-	<title>Profiles</title>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <!-- Title -->
+    <title>Profiles</title>
 </head>
+
 <body>
-	<header>
-		<!-- Done by index.html -->
-	</header>
+    <header>
+        header
+    </header>
+    <main>
+        <!-- Name Selection -->
+        <div id="nameSelect">
+            <label for="sabCheck">Sabine Gruber</label>
+            <label for="patCheck">Patrick Klostermann</label>
+            <label for="marCheck">Maryam Alwash</label>
+            <label for="mioCheck">Mario Schantl</label>
+        </div>
+        
+        <!-- Profiles -->
+        <div class="profileWrapper">
 
-	<main>
-	<!-- Your Content goes here -->
-	Main
+            <!-- Sabine Gruber -->
+            <input type="radio" id="sabCheck" name="nameSelect" checked>
+            <article id="sabine" class="profileCard">
+                <h2>Sabine Gruber</h2>
+                <img src="img/scott.jpg" alt="scott">
+                <p class="bio">
+                    This is me , and i tell you something about me, because you want to read something about this person, wich is nice, becasue then i didnt write this for nothing , so just keep reading thats really awesome.
+                    <br>
+                    <br> This is me , and i tell you something about me, because you want to read something about this person, wich is nice, becasue then i didnt write this for nothing , so just keep reading thats really awesome.
+                    <br>
+                    <br> This is me , and i tell you something about me, because you want to read something about this person, wich is nice, becasue then i didnt write this for nothing , so just keep reading thats really awesome.
+                </p>
+            </article>
 
-	</main>
+            <!-- Patrick Klostermann -->
+            <input type="radio" id="patCheck" name="nameSelect">
+            <article id="patrick" class="profileCard">
+                <div class="person">
+                <h2>Patrick Klostermann</h2>
+                <span class="social">
+                    <a href="http://www.github.com/netflair" target="_blank">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                    <a href="https://at.linkedin.com/in/patrick-klostermann-b60477108" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="mailto:dev@netflair.at">
+                        <i class="fas fa-envelope-square"></i>
+                    </a>
+                    <i class="fas fa-phone-square">+43 664 24 19 229</i>
+                </span>
+                </div>
+                <img src="img/patrick.jpg" alt="scott">
+                <p class="bio">
+                    This is me , and i tell you something about me, because you want to read something about this person, wich is nice, becasue then i didnt write this for nothing , so just keep reading thats really awesome.
+                    <br>
+                    <br> This is me , and i tell you something about me, because you want to read something about this person, wich is nice, becasue then i didnt write this for nothing , so just keep reading thats really awesome.
+                    <br>
+                    <br> This is me , and i tell you something about me, because you want to read something about this person, wich is nice, becasue then i didnt write this for nothing , so just keep reading thats really awesome.
+                </p>
+            </article>
 
-	<footer>
-		<!-- Done on end -->
-	</footer>
+            <!-- Maryam Alwash -->
+            <input type="radio" id="marCheck" name="nameSelect">
+            <article id="maryam" class="profileCard">
+                <h2>Maryam Alwash</h2>
+                <img src="img/scott.jpg" alt="scott">
+                <p class="bio">
+                    This is me , and i tell you something about me, because you want to read something about this person, wich is nice, becasue then i didnt write this for nothing , so just keep reading thats really awesome.
+                    <br>
+                    <br> This is me , and i tell you something about me, because you want to read something about this person, wich is nice, becasue then i didnt write this for nothing , so just keep reading thats really awesome.
+                    <br>
+                    <br> This is me , and i tell you something about me, because you want to read something about this person, wich is nice, becasue then i didnt write this for nothing , so just keep reading thats really awesome.
+                </p>
+            </article>
+
+            <!-- Mario Schantel -->
+            <input type="radio" id="mioCheck" name="nameSelect">
+            <article id="mario" class="profileCard">
+                <h2>Mario Schantel</h2>
+                <img src="img/scott.jpg" alt="scott">
+                <p class="bio">
+                    This is me , and i tell you something about me, because you want to read something about this person, wich is nice, becasue then i didnt write this for nothing , so just keep reading thats really awesome.
+                    <br>
+                    <br> This is me , and i tell you something about me, because you want to read something about this person, wich is nice, becasue then i didnt write this for nothing , so just keep reading thats really awesome.
+                    <br>
+                    <br> This is me , and i tell you something about me, because you want to read something about this person, wich is nice, becasue then i didnt write this for nothing , so just keep reading thats really awesome.
+                </p>
+            </article>
+
+        </div>
+
+    </main>
+    <footer>
+        <!-- Done on end -->
+    </footer>
 </body>
 <script src="js/profiles.js"></script>
+
 </html>
