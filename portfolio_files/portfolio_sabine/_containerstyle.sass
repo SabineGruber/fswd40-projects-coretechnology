@@ -1,0 +1,48 @@
+@mixin border-radius($radius) 
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+    -ms-border-radius: $radius
+    border-radius: $radius
+
+
+.container 
+    padding-top: 3%
+    background-color: #C2D6D6
+    display: grid
+    grid-template-columns: 30% 30%
+    grid-template-rows: auto 50% auto 50%
+    grid-row-gap: 20px
+    justify-content: space-evenly
+    align-content: center
+    width: 100%
+
+.contentbox 
+    background-color: white
+    border: 1px solid grey
+    @include border-radius(5px)
+    box-shadow: 5px 5px 10px grey
+
+
+.contentbox:hover 
+    transform: scale(1.5, 1.5)
+
+.contentbox img 
+    width: 100%
+    margin-bottom: 1%
+
+.destinationprice 
+    width: 96%
+    padding: 2%
+    display: flex
+    flex-flow: row
+
+.destination 
+    width: 50%
+    text-align: left
+
+.destination h2 
+    color: #0033FF
+
+.price 
+    width: 50%
+    text-align: right
