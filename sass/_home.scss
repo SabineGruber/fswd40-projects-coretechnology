@@ -99,6 +99,70 @@ main {
     display: inline-block;
 }
 
+/* Grid Container Right Side Landing Page */
+
+.gridContainerRightSide {
+    background-color: purple;
+    /*height: 80vh;*/
+    width: 100%;
+    font-family: $textFont;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1em;
+}
+
+.gridItemRightSide {
+    background-color: cyan;
+    text-align: center;
+    font-size: 1.5em;
+    position: relative;
+    display: inline-block;
+
+}
+
+.MainCircle {
+    background-color: white;
+    width: 10em;
+    height: 10em;
+    border-radius: 80%;
+    border: 3px solid black;
+    padding: 5px;
+    margin: 3em auto;
+}
+
+/* Team Member Cricles */
+
+.gridContainerTeamInfo {
+    background-color: pink;
+    /*height: 80vh;*/
+    width: 100%;
+    font-family: $textFont;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    /*grid-gap: 1em;*/
+}
+
+.gridItemTeamMembers {
+    background-color: red;
+    text-align: center;
+    font-size: 1.5em;
+    position: relative;
+    margin: 0.5em 0 0.5em 0;
+   /* display: inline-block;*/
+
+}
+
+.SmallCircle {
+    background-color: white;
+    width: 2em;
+    height: 2em;
+    border-radius: 80%;
+    border: 3px solid black;
+    padding: 5px;
+    margin: 0 auto;
+}
+
 
 /* FOOTER STYLING */
 
