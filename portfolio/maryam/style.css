@@ -1,0 +1,64 @@
+.header, footer {
+  display: flex;
+  margin: 0%;
+  background-color: #F4F4F4; }
+
+.heading {
+  color: #E8986D;
+  margin: 0%;
+  margin-top: 3%;
+  margin-left: 3%;
+  font-weight: lighter;
+  font-size: 3em; }
+
+.image1 {
+  display: inline-block;
+  padding: 0%;
+  margin: 0%;
+  border: 1px solid #C6DBE8;
+  border-radius: 150px;
+  margin: 1%; }
+
+footer {
+  justify-content: center;
+  padding: 3%; }
+  footer button {
+    width: 130px;
+    font-size: 2em; }
+    footer button a {
+      text-decoration: none;
+      color: black; }
+
+#form {
+  background-color: #426A7F;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 10%; }
+  #form form {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-content: space-around; }
+  #form h3 {
+    width: 40%;
+    pading: 0%;
+    margin: 0%;
+    font-size: 5vw; }
+  #form input {
+    width: 40%;
+    margin: 2% 5%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 20%;
+    font-size: 2vw; }
+
+button {
+  border-radius: 10px;
+  width: 30%;
+  height: 15%;
+  margin: 0 10%;
+  font-size: 3vw; }
+
+/*# sourceMappingURL=style.css.map */

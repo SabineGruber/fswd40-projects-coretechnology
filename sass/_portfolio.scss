@@ -1,3 +1,9 @@
+body {
+    font-family: $textFont;
+    padding: $mainPadding;
+    margin: $mainMargin;
+}
+
 .portfolioH2 {
     color: $primaryColor;
     font-size: $H1FontSize;
@@ -7,26 +13,24 @@
 
 .container {
     display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 50% 50%;
-  /* justify-items: center; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 48% 48%;
+  /*justify-items: center; */
     align-items: center;
-    justify-content: space-between;
-    align-content: space-evenly;
+   justify-content: space-between;
+    align-content: space-evenly; 
     grid-row-gap: 50px;
-    padding-bottom: 30px;
-}
-
-img {
-    width: 100%;
-    border: $mainBorder;
+    padding: 0 0 30px 0;
 }
 
 .portfolioItem {
-    justify-self: center;
-    align-self: center;
-    
     margin-bottom: 10px;
+    width: 100%;
+}
+
+.portfolioItem img {
+    width: 100%;
+    border: $mainBorder;
 }
 
 .portfolioP1, .portfolioP2 {

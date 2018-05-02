@@ -1,0 +1,184 @@
+/* SASS Feature - Variables */
+/* SASS Feature - Variables */
+/* Create SASS Feature - Mixin */
+* {
+  font-family: Helvetica, Arial, Sans-Serif;
+  margin: 0;
+  padding: 0; }
+
+#wrapper {
+  width: 80%;
+  margin: 5em auto; }
+
+header {
+  background-color: white;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 7.5em; }
+
+header div#top {
+  background-color: darkblue;
+  padding-top: 0.5em;
+  width: 100%; }
+
+header img {
+  position: absolute;
+  margin-left: 2em;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 3em; }
+
+header h1 {
+  text-align: left;
+  font-weight: bold;
+  color: white;
+  font-size: 2.75em;
+  margin-left: 2em; }
+
+nav {
+  width: 100%;
+  height: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5em;
+  color: white;
+  text-align: right;
+  font-size: 1.5em; }
+
+nav a {
+  color: white;
+  text-decoration: none; }
+
+nav ul {
+  list-style-type: none;
+  padding: 0.25em 0.5em 0.25em 0.25em;
+  overflow: hidden;
+  background-color: darkblue; }
+
+nav ul li {
+  display: inline; }
+
+hr {
+  width: 80%;
+  height: 1em;
+  color: purple;
+  background-color: darkblue;
+  margin-bottom: 2em;
+  margin-top: 2em; }
+
+/* Using Mixin */
+main {
+  background-color: lightblue;
+  padding-top: 0.15em;
+  padding-bottom: 0.15em; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-gap: 10%;
+  width: 90%;
+  margin: 2em auto; }
+
+.grid-item {
+  background-color: white;
+  font-size: 2em;
+  text-align: center;
+  border: 1px solid grey; }
+
+figure {
+  width: 100%; }
+
+.container {
+  position: relative; }
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: darkblue;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  transition: .3s ease; }
+
+.container:hover .overlay {
+  transform: scale(1); }
+
+.text {
+  color: white;
+  font-size: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.city a {
+  color: blue;
+  text-decoration: none;
+  margin-left: 0.25em; }
+
+.country {
+  color: grey;
+  margin-left: 0.25em;
+  font-size: smaller; }
+
+/* Using .price value and extend them in .av_price_txt */
+.price, .av_price_txt {
+  color: grey; }
+
+.av_price_txt {
+  margin-right: 0.25em;
+  font-weight: lighter;
+  font-size: smaller; }
+
+#invoice {
+  padding: 2em;
+  background-color: lightblue; }
+
+button {
+  font-size: 1em;
+  padding: 0.25em; }
+
+input {
+  font-size: 1em;
+  padding: 0.25em;
+  width: 5em; }
+
+/* Media Queries */
+@media only screen and (max-width: 850px) {
+  header div#top {
+    height: 8em; }
+
+  .grid-container {
+    grid-template-columns: auto;
+    margin-top: 5em; } }
+@media only screen and (min-width: 1200px) {
+  .grid-item {
+    background-color: lightgreen; } }
+
+/*# sourceMappingURL=base.css.map */

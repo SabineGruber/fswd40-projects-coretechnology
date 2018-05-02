@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Price Comparison</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="top">
+                <img src="img/logo.png" alt="">
+                <h1>Invoice</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Back</a></li>
+                    <li>|</li>
+                    <li><a href="invoice.html">Invoice</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="invoice">
+            <input id="price1" class="product_price" value="1189">  Price <span>
+                <script>
+
+                    ProductOne = "<b>Trip to Split</b>";
+                    ProductTwo = "<b>Trip to Hvar</b>";
+
+                    document.write(ProductOne);
+                </script>
+            </span>
+            <br>
+            <br>
+            <input id="price2" class="product_price" value="2360">  Price <span>
+                <script>
+                    document.write(ProductTwo);
+                </script>
+            <br>
+            <br>
+            <button onclick="getPrice()">
+                Get total
+            </button>
+            <br>
+            <br>
+            <div>
+                <script>
+                document.write("If you want to buy a " + ProductOne + " and a " + ProductTwo + ", it costs: ");
+                </script>
+            </div>
+            <br>
+            <input readonly id="total">
+            <br>
+            <br>
+            <div>
+                <script>
+                document.write("If you want to buy a " + ProductOne + " and a " + ProductTwo + " as a GoldenCard holder, you will get a 10% discount:");
+                </script>
+            </div>
+            <br>
+            <input readonly id="total_discounted">
+        
+        </div>
+    </div>
+    <script>
+    getPrice = function() {
+        var PriceProductOne = Number(document.getElementById("price1").value);
+        var PriceProductTwo = Number(document.getElementById("price2").value);
+        var totalValue = PriceProductOne + PriceProductTwo
+        document.getElementById("total").value = totalValue.toFixed(2);
+
+        var totalValue_discounted = totalValue * 0.9
+        document.getElementById("total_discounted").value = totalValue_discounted.toFixed(2);
+
+
+
+    }
+    </script>
+</body>
+
+</html>

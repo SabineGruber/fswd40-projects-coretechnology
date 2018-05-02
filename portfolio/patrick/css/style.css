@@ -1,0 +1,226 @@
+@charset "UTF-8";
+/* COLORS */
+/* FONTS */
+#headerContent, .sectionContent, .modal-body label {
+  display: flex; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+h1 {
+  padding: 50px 0;
+  font-family: "Alfa Slab One", cursive;
+  text-align: center;
+  font-size: 3em;
+  text-transform: uppercase;
+  color: #C6C6C6; }
+
+i {
+  font-size: 4em;
+  color: #C6C6C6; }
+
+/* --------- Header --------- */
+header {
+  background: #fff;
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  border-bottom: 3px solid #ff0000; }
+
+#headerContent {
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 20px; }
+
+#headerContent img {
+  width: 150px; }
+
+#title {
+  left: 180px;
+  position: absolute;
+  font-size: 2em;
+  font-family: "Alfa Slab One", cursive;
+  color: #008CC1; }
+
+/* --------- Main: Home --------- */
+main {
+  height: 100%; }
+
+.hero {
+  margin: 0 auto; }
+
+figure {
+  margin-top: 90px; }
+
+figcaption {
+  position: absolute;
+  font-size: 3vw;
+  padding: 20px;
+  font-family: "Alfa Slab One", cursive;
+  color: #008CC1;
+  text-transform: uppercase;
+  text-shadow: #fff 3px 2px; }
+
+figure img {
+  max-height: 90vh;
+  width: 100%; }
+
+.sectionContent {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+  justify-content: space-evenly; }
+
+section:nth-child(even) {
+  background: #FAFAFA; }
+
+.box {
+  width: 100%;
+  text-align: center; }
+
+#numbers p {
+  font-size: 2em;
+  color: #008CC1;
+  font-weight: bold; }
+
+#numbers h3 {
+  color: #f83939; }
+
+#contact {
+  padding-top: 0; }
+
+/* --------- Modal Styles --------- */
+.button {
+  background: #f83939;
+  padding: 1em 2em;
+  color: #fff;
+  border: 1px solid #008CC1;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.button:hover {
+  background: #008CC1;
+  color: #000;
+  cursor: pointer; }
+
+#submit {
+  display: block;
+  width: 50%;
+  margin: 20px auto; }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.7); }
+
+.modal-header {
+  border-bottom: 3px solid #f83939;
+  text-align: center;
+  font-family: "Alfa Slab One", cursive; }
+
+.modal-body {
+  width: 40%;
+  margin: 20px auto; }
+
+#result {
+  border-top: 3px solid #f83939;
+  text-align: center;
+  font-size: 2em;
+  padding-top: 15px; }
+
+.modal-body input {
+  width: 55%; }
+
+.modal-body select {
+  width: 59%; }
+
+.modal-body label {
+  justify-content: space-between;
+  align-items: center; }
+
+.modal-body p {
+  float: right;
+  color: #f83939; }
+
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  -webkit-box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.5), 0 7px 20px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.5), 0 7px 20px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.5), 0 7px 20px 0 rgba(0, 0, 0, 0.5);
+  animation-name: modalopen;
+  animation-duration: 1s; }
+
+@keyframes modalopen {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.closeBtn {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+  margin-top: -30px;
+  margin-right: -30px; }
+
+.closeBtn:hover,
+.closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer; }
+
+section img {
+  max-width: 95%; }
+
+#contact input,
+textarea,
+input[type="submit"] {
+  width: 100%;
+  margin-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0; }
+
+#contact form {
+  width: 50%; }
+
+footer {
+  border-top: 3px solid #f83939;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #008CC1;
+  font-size: 2em; }
+
+/* Media Querries */
+@media screen and (max-width: 1200px) {
+  .sectionContent {
+    width: 100%; }
+
+  .modal-body {
+    width: 80%; } }
+@media screen and (max-width: 692px) {
+  .headerContent,
+  .sectionContent {
+    flex-flow: wrap;
+    padding-top: 0; }
+
+  h1 {
+    font-size: 1.5em; }
+
+  #title {
+    position: static;
+    font-size: 1.2em; } }
+
+/*# sourceMappingURL=style.css.map */
