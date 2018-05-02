@@ -48,7 +48,6 @@ input[type="radio"] {
     grid-template-areas:
         "img name"
         "img bio";
-    @include transition;
 }
 
 .person {
@@ -74,7 +73,7 @@ input[type="radio"] {
 }
 
 
-h2 {
+.person h2 {
 	font-family: $headingFont;
 	font-size: 4em;
 	color: $primaryColor;
@@ -90,6 +89,7 @@ h2 {
 }
 
 .skills {
+	grid-area: img;
 	position: absolute;
 	top: 10px;
 	left: -4px;
@@ -113,3 +113,61 @@ h2 {
 	margin: $mainMargin;
 }
 
+/* MEDIA QUERIES --------------------------------------- */
+
+@media only screen and (max-width:1300px){
+
+	.profileCard {
+	position: relative;
+	border: $mainBorder;
+	display: none;
+    grid-template-columns: 40%  60%;
+    grid-template-areas:
+        "name name"
+        "img bio";
+}
+
+.person h2 {
+	text-align: center;
+	font-size: 2.5em;
+}
+
+.social {
+	width: 100%;
+	margin-top: -52px;
+	margin-left: 0;
+	font-size: 1em;
+	text-align: center;
+}
+
+}
+
+@media only screen and (max-width:1030px){
+
+	.profileCard {
+	position: relative;
+	border: $mainBorder;
+	display: none;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "name"
+        "bio"
+        "img";
+}
+
+
+}
+
+@media only screen and (max-width:980px) {
+	#nameSelect {
+		display: none;
+	}
+
+	.profileCard {
+		display: grid;
+	}
+
+		.profileCard {
+	margin-bottom: 10px;
+}
+}
