@@ -9,6 +9,7 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <!-- Title -->
     <title>Home</title>
 </head>
@@ -18,108 +19,252 @@
         <nav>
             <div class="gridContainerNav">
                 <div class="gridItemNav">
-                	<p class="TeamName">SPAM</p>
+                    <p class="TeamName">SPAMM-DEV</p>
                 </div>
                 <div class="gridItemNav FontSizeNav">
-                    <a href="#">Home</a>
+                    <a href="#Home">Home</a>
                 </div>
                 <div class="gridItemNav FontSizeNav">
-                    <div class="dropdown">
-                        <a href="#">Profiles</a>
-                        <div class="dropdown-content">
-                            <a href="#">Patrick</a>
-                            <a href="#">Sabine</a>
-                            <a href="#">Maryam</a>
-                            <a href="#">Mario</a>
-                        </div>
-                    </div>
+                        <a href="#Profiles">Profiles</a>
                 </div>
                 <div class="gridItemNav FontSizeNav">
-                    <a href="#">Portfolio</a>
+                    <a href="#Portfolio">Portfolio</a>
                 </div>
-                <div class="gridItemNav FontSizeNav">
-                    <div class="dropdown">
-                        <a href="#">Specials</a>
-                        <div class="dropdown-content">
-                            <a href="#">GitHistory</a>
-                            <a href="#">NEWS</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="gridItemNav FontSizeNav">
-                    <a href="#">Contact</a>
-                </div>
-                <div class="gridItemNav">
-                </div>
+  
             </div>
         </nav>
     </header>
     <main>
-        <!-- Your Content goes here -->
-        <div class="gridContainerMainLandingPage">
-
-        	<!-- LEFT SIDE "TEAM" -->
-
-            <div class="gridItemMainLandingPage">
-                <h1>TEAM</h1>
-            </div>
-
-			<!-- RIGHT SIDE "TEAM INFO & CIRCLE" -->
-
-            <div class="gridItemMainLandingPage">
-
-                <div class="gridContainerRightSide">
-                    
-                    <div class="gridItemRightSide">
-
-                        <div class="gridContainerTeamInfo">
-
-                            <div class="gridItemTeamMembers ShiftRight">
-                                <div class="gridSubItemTeamMembers TeamMemberText">
-                                	<h3 class="h3Smaller">Patrick</h3>
-                                </div>
-                                <div class="gridSubItemTeamMembers SmallCircle"></div>
-                            </div>
-
-                            <div class="gridItemTeamMembers Stay">
-                                <div class="gridSubItemTeamMembers TeamMemberText">
-                                	<h3 class="h3Smaller">Sabine</h3>
-                                </div>
-                                <div class="gridSubItemTeamMembers SmallCircle"></div>
-                            </div>
-
-                            <div class="gridItemTeamMembers Stay">
-                                <div class="gridSubItemTeamMembers TeamMemberText">
-                                	<h3 class="h3Smaller">Maryam</h3>
-                                </div>
-                                <div class="gridSubItemTeamMembers SmallCircle"></div>
-                            </div>
-
-                            <div class="gridItemTeamMembers ShiftRight">
-                                <div class="gridSubItemTeamMembers TeamMemberText">
-                                	<h3 class="h3Smaller">Mario</h3>
-                                </div>
-                                <div class="gridSubItemTeamMembers SmallCircle"></div>
-                            </div>
-
-                        </div>
-                    </div>
-                
-
-
-                	<div class="gridItemRightSide">
-                    		<img class="MainCircle" src="https://hoardinghomesolutions.com.au/wp-content/uploads/2017/12/Home-Hoarding-Solutions_sQUARE.jpg">
-
-                    </div>
+        <!-- Landing Page -->
+        <section id="Home">
+            <div class="LandingPageBubbleContainer">
+                <div class="LandingPageBubbleItem LowerBubble">
+                    CSS3
                 </div>
+                <div class="LandingPageBubbleItem">
+                    PHP
+                </div>
+                <div class="LandingPageBubbleItem">
+                    SQL
+                </div>
+                <div class="LandingPageBubbleItem LowerBubble">
+                    JS
+                </div>
+            </div>
+            <div class="MainCircle">
+
+            <div id='warped'>
+                     <span class='w0'>T</span><span class='w1'>o</span><span class='w2'>g</span><span class='w3'>e</span><span class='w4'>t</span><span class='w5'>h</span><span class='w6'>e</span><span class='w7'>r</span><span class='w8'> </span><span class='w9'>w</span><span class='w10'>e</span><span class='w11'> </span><span class='w12'>l</span><span class='w13'>e</span><span class='w14'>a</span><span class='w15'>r</span><span class='w16'>n</span>
+              </div>
 
             </div>
-
-
-        </div>
+            <div class="TeamText">
+                4 people. 1 course. They met in CodeFactory and combined their skills on 1 single page. Meet Maryam, Patrick, Mario and Sabine.
+            </div>
+        </section>
+        <!-- Profile Cards -->
+        <section id="Profiles">
+            <h1>This is us</h1>
+            <!-- Name Selection -->
+            <div id="nameSelect">
+                <label class="state active" id="sabLab" for="sabCheck">Sabine Gruber</label>
+                <label class="state" id="patLab" for="patCheck">Patrick Klostermann</label>
+                <label class="state" id="marLab" for="marCheck">Maryam Alwash</label>
+                <label class="state" id="mioLab" for="mioCheck">Mario Schantel</label>
+            </div>
+            <!-- Profiles -->
+            <div class="profileWrapper">
+                <!-- SABINE GRUBER -->
+                <input type="radio" id="sabCheck" name="nameSelect" checked>
+                <article id="sabine" class="profileCard">
+                    <!-- Name and Social Bar -->
+                    <div class="person">
+                        <h2>Sabine Gruber</h2>
+                        <span class="social">
+                    <a href="https://github.com/SabineGruber" target="_blank">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sabine-gruber-17741ab9/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:sab.gruber@gmx.at">
+                        <i class="fas fa-envelope-square"></i>
+                    </a>
+                </span>
+                    </div>
+                    <!-- Skills -->
+                    <div class="skills">
+                        <ul>
+                            <li>| HTML</li>
+                            <li>| CSS</li>
+                            <li>| Basic JS</li>
+                            <li>| WordPress</li>
+                        </ul>
+                    </div>
+                    <!-- Image and Bio -->
+                    <img src="img/sabine.jpg" alt="scott">
+                    <p class="bio">
+                        Starting as an online editor at a publishing company 10 years ago, Sabine took a look at websites from the backend point of view.
+                        <br> Later as a Web Manager she was also leading Webdesign projects.
+                        <br>
+                        <br> As she liked it in the Frontend, Sabine decided to change her career to professional Webdesign.
+                        <br> At the moment, she is studying Frontend Web Development at CodeFactory in Vienna.
+                    </p>
+                </article>
+                <!-- PATRICK KLOSTERMANN -->
+                <input type="radio" id="patCheck" name="nameSelect">
+                <!-- Name and Social Bar -->
+                <article id="patrick" class="profileCard">
+                    <div class="person">
+                        <h2>Patrick Klostermann</h2>
+                        <span class="social">
+                    <a href="http://netflair.at" target="_blank">
+                    <i class="fas fa-globe"></i>
+                    </a>
+                    <a href="http://www.github.com/netflair" target="_blank">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                    <a href="https://at.linkedin.com/in/patrick-klostermann-b60477108" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:dev@netflair.at">
+                        <i class="fas fa-envelope-square"></i>
+                    </a>
+                    <i class="fas fa-phone-square">+43 664 24 19 229</i>
+                </span>
+                    </div>
+                    <!-- Skills -->
+                    <div class="skills">
+                        <ul>
+                            <li>| HTML</li>
+                            <li>| CSS</li>
+                            <li>| Basic JS</li>
+                            <li>| WordPress</li>
+                            <li>| Joomla</li>
+                            <li>| Bootstrap</li>
+                            <li>| Zurb's Foundation</li>
+                        </ul>
+                    </div>
+                    <!-- Image and Bio -->
+                    <img src="img/patrick.jpg" alt="scott">
+                    <p class="bio">
+                        Around 5 years ago, Patrick developed a great interest in Webtechnologies.
+                        <br>
+                        <br> After reading many sites online and playing around with the new knowledge, he started as a freelancer in late 2015.
+                        <br> With some experience and a handful of clients he decided to bring his knowledge on a more professional level.
+                        <br>
+                        <br> Currently Patrick is studying at the "Code Factory" in vienna, prepareing himself for new opportunities.
+                    </p>
+                </article>
+                <!-- MARYAM ALWASH -->
+                <input type="radio" id="marCheck" name="nameSelect">
+                <article id="maryam" class="profileCard">
+                    <!-- Name and Social Bar -->
+                    <div class="person">
+                        <h2>Maryam Alwash</h2>
+                        <span class="social">
+                    <a href="https://github.com/maryamalwash" target="_blank">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                    <a href="mailto:maryammer@icloud.com">
+                        <i class="fas fa-envelope-square"></i>
+                    </a>
+                    <i class="fas fa-phone-square">+43 664 25 13 424</i>
+                </span>
+                    </div>
+                    <!-- Skills -->
+                    <div class="skills">
+                        <ul>
+                            <li>| HTML</li>
+                            <li>| CSS</li>
+                            <li>| Basic JS</li>
+                        </ul>
+                    </div>
+                    <!-- Image and Bio -->
+                    <img src="img/maryam.jpg" alt="scott">
+                    <p class="bio">
+                        This is me , and i tell you something about me, because you want to read something about this person, wich is nice, becasue then i didnt write this for nothing , so just keep reading thats really awesome.
+                        <br>
+                        <br> This is me , and i tell you something about me, because you want to read something about this person, wich is nice, becasue then i didnt write this for nothing , so just keep reading thats really awesome.
+                        <br>
+                        <br> This is me , and i tell you something about me, because you want to read something about this person, wich is nice, becasue then i didnt write this for nothing , so just keep reading thats really awesome.
+                    </p>
+                </article>
+                <!-- MARIO SCHANTEL -->
+                <input type="radio" id="mioCheck" name="nameSelect">
+                <article id="mario" class="profileCard">
+                    <!-- Name and Social Bar -->
+                    <div class="person">
+                        <h2>Mario Schantel</h2>
+                        <span class="social">
+                    <a href="https://github.com/StormyTaurus" target="_blank">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mario-schantel/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:marioschantel@gmail.com">
+                        <i class="fas fa-envelope-square"></i>
+                    </a>
+                    <i class="fas fa-phone-square">+43 699 10 718 872</i>
+                </span>
+                    </div>
+                    <!-- Skills -->
+                    <div class="skills">
+                        <ul>
+                            <li>| HTML</li>
+                            <li>| CSS</li>
+                            <li>| Basic JS</li>
+                            <li>| Basic WordPress</li>
+                        </ul>
+                    </div>
+                    <!-- Image and Bio -->
+                    <img src="img/mario.jpg" alt="scott">
+                    <p class="bio">
+                        Mario graduated from the University of Vienna in Business Administration and is about to start studying Web and Mobile Media Design at the Danube University Krems.
+                        <br>
+                        <br> As he is very interested to enrich his skills set and would love to work as a web developer, he decided to take the Fullstack Developer Course to compliment the frontend focused Master Degree from the Danube University Krems.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <!-- Portfolio -->
+        <section id="Portfolio">
+            <h1>Our Portfolio</h1>
+            <div class="container">
+                <a href="./portfolio/mario/index.html" target="_blank">
+                    <div class="portfolioItem">
+                        <img src="./img/portfolio_screenshot_mario.jpg" alt="Portfolio Screenshot">
+                        <p class="portfolioP1">Booking site</p>
+                        <p class="portfolioP2">Mario Schantel</p>
+                    </div>
+                </a>
+                <a href="./portfolio/maryam/index.html" target="_blank">
+                    <div class="portfolioItem">
+                        <img src="./img/portfolio_screenshot_maryam.jpg" alt="Portfolio Screenshot">
+                        <p class="portfolioP1">Car insurance site with calculator</p>
+                        <p class="portfolioP2">Maryam Alwash</p>
+                    </div>
+                </a>
+                <a href="./portfolio/patrick/index.html" target="_blank">
+                    <div class="portfolioItem">
+                        <img src="./img/portfolio_screenshot_patrick.jpg" alt="Portfolio Screenshot">
+                        <p class="portfolioP1">Car insurance site with calculator</p>
+                        <p class="portfolioP2">Patrick Klostermann</p>
+                    </div>
+                </a>
+                <a href="./portfolio/sabine/index.html" target="_blank">
+                    <div class="portfolioItem">
+                        <img src="./img/portfolio_screenshot_sabine.jpg" alt="Portfolio Screenshot">
+                        <p class="portfolioP1">Booking site</p>
+                        <p class="portfolioP2">Sabine Gruber</p>
+                    </div>
+                </a>
+            </div>
+        </section>
     </main>
     <footer>
-        Legal Notice
+        Done by Code Factory students: Mario, Maryam, Patrick, Sabine
     </footer>
 </body>
 <script src="js/main.js"></script>
