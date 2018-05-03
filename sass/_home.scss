@@ -1,3 +1,23 @@
+/* Back to Top Button */
+#topBtn {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 2em;
+    border: $mainBorder;
+    text-align: center;
+    z-index: 1;
+}
+
+#topBtn:hover {
+    cursor:pointer;
+    background: $highlightColor;
+    color: #fff;
+}
+
+
 /* NAVBAR STYLING */
 
 .TeamName {
@@ -23,7 +43,7 @@
     display: inline-block;
 }
 
-.gridItemNav:hover {
+.FontSizeNav:hover {
     background-color: $highlightColor;
 }
 
