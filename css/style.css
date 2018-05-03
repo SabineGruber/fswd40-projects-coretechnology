@@ -155,7 +155,15 @@
   margin: 0 auto;
   line-height: 3em;
   font-weight: bold;
-  color: #264d73; }
+  color: #264d73;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  /* Safari */
+  transition: width 2s, height 2s, transform 2s; }
+
+.LandingPageBubbleItem:hover {
+  -webkit-transform: rotate(360deg);
+  /* Safari */
+  transform: rotate(360deg); }
 
 .MainCircle {
   /*background-color: white;*/
@@ -540,7 +548,16 @@ input[type="radio"] {
 
 .portfolioItem img {
   width: 100%;
-  border: 3px solid #333333; }
+  border: 3px solid #333333;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: all 0.8s linear; }
+
+.portfolioItem img:hover {
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%); }
 
 .portfolioP1, .portfolioP2 {
   text-align: center;
