@@ -195,6 +195,13 @@
     line-height: 3em;
     font-weight: bold;
     color: $highlightColor;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.LandingPageBubbleItem:hover {
+-webkit-transform: rotate(360deg); /* Safari */
+  transform: rotate(360deg);
 }
 
 .MainCircle {
